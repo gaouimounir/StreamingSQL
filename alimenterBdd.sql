@@ -13,7 +13,7 @@ VALUES
   ('Marlon', 'Brando', '1924-04-03', '2023-03-01', '2023-03-01'),
   ('Robert', 'De Niro', '1943-08-17', '2023-03-02', '2023-03-02'),
   ('Al', 'Pacino', '1940-04-25', '2023-03-03', '2023-03-03'),
-  ('Keanu', 'Reeves', '1964-09-02', '2023-03-04', '2023-03-04'),
+  ('Keanu', 'Reeves', '1964-09-02', '2023-03-04', '2023-03-04');
 
 -- Director
 INSERT INTO Director (fistname_director, lastname_director, creation_date_director, modification_date_director)
