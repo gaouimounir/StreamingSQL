@@ -30,7 +30,7 @@ CREATE TABLE Director(
 CREATE TABLE Movie(
    Id_movie INT AUTO_INCREMENT,
    title VARCHAR(50),
-   duration TIME,
+   duration INT,
    release_year DATE,
    creation_date_movie DATE,
    modification_date_movie DATE,
@@ -51,9 +51,8 @@ CREATE TABLE Perform(
    Id_movie INT,
    Id_actor INT,
    role VARCHAR(50),
-   is_lead_role LOGICAL,
+   is_lead_role BOOLEAN,
    PRIMARY KEY(Id_movie, Id_actor),
    FOREIGN KEY(Id_movie) REFERENCES Movie(Id_movie),
    FOREIGN KEY(Id_actor) REFERENCES Actor(Id_actor)
 );
-
