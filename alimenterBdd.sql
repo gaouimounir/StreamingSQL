@@ -50,3 +50,5 @@ VALUES
   (3, 3, 'Tony Montana', TRUE),
   (4, 4, 'Neo', TRUE),
   (5, 3, 'Lt. Vincent Hanna', TRUE);
+  (5, 2, 'Neil McCauley', TRUE),
+  
