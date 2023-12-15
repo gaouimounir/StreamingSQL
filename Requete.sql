@@ -40,3 +40,9 @@ VALUES
 INSERT INTO actor (firstname_actor, lastname_actor, birthdate_actor, creation_date_actor, modification_date_actor)
 VALUES
 ('Leonardo', 'DiCaprio', '1974-11-11', '2023-03-05', '2023-03-05');
+
+---requête modifier un film---
+
+UPDATE movie
+SET title = 'Casino', duration = 178, release_year = '1995-12-15', creation_date_movie = '2023-03-05', modification_date_movie = '2023-12-15', Id_director = 2
+WHERE Id_movie = 1;
