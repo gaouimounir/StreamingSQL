@@ -51,3 +51,7 @@ WHERE Id_movie = 1;
 
 DELETE FROM actor
 WHERE Id_actor = 1;
+
+---requête afficher les 3 derniers acteurs/actrices ajouté(e)s----
+
+SELECT * FROM actor ORDER BY creation_date_actor DESC LIMIT 3;
