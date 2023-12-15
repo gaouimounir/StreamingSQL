@@ -30,3 +30,13 @@ VALUES
 INSERT INTO movie (title, duration, release_year, creation_date_movie, modification_date_movie, Id_director)
 VALUES
 ("L'Impasse", 178, '1994-03-23', '2023-03-05', '2023-03-05', 3);
+
+---requête ajouter un acteur/actrice---
+
+INSERT INTO actor (firstname_actor, lastname_actor, birthdate_actor, creation_date_actor, modification_date_actor)
+VALUES
+('Joe', 'Pesci', '1943-02-09', '2023-03-05', '2023-03-05');
+
+INSERT INTO actor (firstname_actor, lastname_actor, birthdate_actor, creation_date_actor, modification_date_actor)
+VALUES
+('Leonardo', 'DiCaprio', '1974-11-11', '2023-03-05', '2023-03-05');
