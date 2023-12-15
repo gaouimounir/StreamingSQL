@@ -5,3 +5,11 @@ SELECT title, release_year FROM Movie ORDER BY release_year DESC;
 ---------les noms, prénoms et âges des acteurs/actrices de plus de 30 ans dans l'ordre alphabétique--------
 
 SELECT firstname_actor, lastname_actor, birthdate_actor FROM Actor WHERE birthdate_actor < '1993-01-01' ORDER BY lastname_actor;
+
+---la liste des acteurs/actrices principaux pour un film donné---
+
+SELECT Actor.firstname_actor, Actor.lastname_actor, Perform.role
+FROM Perform
+JOIN Actor ON Perform.Id_actor = Actor.Id_actor
+WHERE Perform.Id_movie = 3
+  AND Perform.is_lead_role = TRUE;
