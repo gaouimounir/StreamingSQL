@@ -13,3 +13,10 @@ FROM Perform
 JOIN Actor ON Perform.Id_actor = Actor.Id_actor
 WHERE Perform.Id_movie = 3
   AND Perform.is_lead_role = TRUE;
+
+---la liste des films pour un acteur/actrice donné---
+
+SELECT movie.title
+FROM movie
+JOIN perform ON Perform.Id_movie = movie.Id_movie
+WHERE perform.Id_actor = 3;
