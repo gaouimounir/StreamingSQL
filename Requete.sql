@@ -20,3 +20,13 @@ SELECT movie.title
 FROM movie
 JOIN perform ON Perform.Id_movie = movie.Id_movie
 WHERE perform.Id_actor = 3;
+
+---requête ajouter un film---
+
+INSERT INTO movie (title, duration, release_year, creation_date_movie, modification_date_movie, Id_director)
+VALUES
+('Casino', 178, '1995-12-15', '2023-03-05', '2023-03-05', 2);
+
+INSERT INTO movie (title, duration, release_year, creation_date_movie, modification_date_movie, Id_director)
+VALUES
+("L'Impasse", 178, '1994-03-23', '2023-03-05', '2023-03-05', 3);
