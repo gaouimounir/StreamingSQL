@@ -36,6 +36,9 @@ Dans l'onglet SQL, copiez collez les requêtes ci dessous :
 ```bash
   CREATE DATABASE IF NOT EXISTS nom_de_la_base_de_donnees; USE nom_de_la_base_de_donnees;
 ```
+- Copiez collez le fichier 'createBdd.sql' pour créer les différentes tables.
+- Copiez collez le fichier 'alimenterBdd.sql' pour alimenter la base de données
+
 - Les titres et dates de sortie des films du plus récent au plus ancien
 ```bash
   SELECT title, release_year FROM Movie ORDER BY release_year DESC;
